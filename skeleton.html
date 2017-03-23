@@ -1,35 +1,76 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html>
 
-General Assembly Account Creation
+<head>
+  <meta charset="utf-8">
+  <title>General Assembly Account Creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
+<body>
+  <header>
+    <div class="container">
+      <img src="general_assembly_logo.png" alt="GA Logo">
+      <h1>General Assembly Account Creation</h1>
+    </div>
+  </header>
 
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+  <div class="container">
+    <p>Welcome to the General Assembly. General Assembly is a global institution training people all over the world in today's top technologies.</p>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+    <p>Please fill out the information below to create your General Assembly account. Let us know what city you're in and what course you're taking. This list is for all students. Please tell us what city you're in and whether you're taking the Immersive
+      User Experience (UX) course or the Immersive Web Development course.</p>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+    <form class="" action="success.html" method="get">
+      <!-- <div class="city">
+          <select class="city" name="city">
+            <option value="hongKong">Hong Kong</option>
+            <option value="london">London</option>
+            <option value="losAngeles">Los Angeles</option>
+            <option value="newYork">New York</option>
+            <option value="portland">Portland</option>
+            <option value="sanFansisco">San Francisco</option>
+            <option value="seattle">Seattle</option>
+            <option value="singapore">Singapore</option>
+          </select>
+          <label for="city">City:</label>
+        </div> -->
 
-Name:     _________
-Email:    _________
-Password: *********
+      <!-- <div class="course">
+          <label for="course">Course:</label>
+          <input type="radio" name="course" value="UX"> UX
+          <input type="radio" name="course" value="webDev" checked> Web Dev
+        </div> -->
 
-[] Yes, subscribe me to the General Assembly student newsletter
+      <div class="name">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+      </div>
 
-[Subscribe]
+      <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+      </div>
+
+      <!-- <div class="password">
+          <label for="password">Password:</label>
+          <input type="password" name="password">
+        </div>
+
+        <div class="subscribe">
+          <input type="checkbox" name="subscribe" checked/>
+          <label for="subscribe">Yes, subscribe me to the General Assembly student newsletter</label>
+        </div> -->
+
+      <div class="subscribe">
+        <button type="submit" name="subscribe">Subscribe</button>
+      </div>
+
+    </form>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
